@@ -1,0 +1,11 @@
+{
+  "name": "herp-cloud-chrome-extension",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "ssh://git@github.com/RyutaKojima/herp-cloud-chrome-extension.git",
+  "author": "rkojima <kojima@sailboat.co.jp>",
+  "license": "GPL-3.0",
+  "scripts": {
+    "zip": "VER=`cat src/manifest.json | jq -r .version` && NAME=`cat package.json | jq -r .name` && mkdir -p ./publish && zip -r \"./publish/${NAME}-${VER}.zip\" ./src"
+  }
+}
