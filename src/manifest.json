@@ -1,13 +1,12 @@
 {
   "name": "HERP Hire recommend",
   "description": "HERP HireのWebサイトを拡張します",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "icons": {
     "128": "icon/icon128.png"
   },
   "manifest_version": 3,
   "permissions": [
-    "tabs",
     "storage"
   ],
   "action": {},

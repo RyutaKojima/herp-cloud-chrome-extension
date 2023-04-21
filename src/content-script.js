@@ -14,7 +14,7 @@ const loadOption = () => {
     const mapping = options.mapping ?? []
 
     document.addEventListener('click', (event) => {
-        const userNameElement = event.target.closest('.user-selector__user.--selected')?.querySelector('.user-selector__name')
+        const userNameElement = event.target.closest('.user-selector__user')?.querySelector('.user-selector__name')
         if (!userNameElement) {
             return
         }
